@@ -1,4 +1,3 @@
-const fetch = require('node-fetch');
 import { SlashCommandBuilder, EmbedBuilder } from 'discord.js';
 
 export const command = {
@@ -28,6 +27,7 @@ export const command = {
         .setTimestamp();
 
       await interaction.editReply({ embeds: [embed] });
+
     } catch (err) {
       console.error(err);
       await interaction.editReply('❌ Something went wrong fetching a cat 😿');
