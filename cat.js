@@ -1,3 +1,4 @@
+const fetch = require('node-fetch');
 import { SlashCommandBuilder, EmbedBuilder } from 'discord.js';
 
 export const command = {
