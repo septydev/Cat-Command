@@ -1,3 +1,5 @@
+import { SlashCommandBuilder, EmbedBuilder } from 'discord.js';
+
 if (interaction.commandName === 'cat') {
   await interaction.deferReply();
   try {
